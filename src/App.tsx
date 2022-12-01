@@ -9,6 +9,8 @@ function App() {
         <Route path={paths.HOME} element={<Public />}>
           <Route path={paths.HOME} element={<Home />} />
           <Route path={paths.LOGIN} element={<Login />} />
+
+          <Route path={"*"} element={<Home />} />
         </Route>
       </Routes>
     </>
